@@ -18,6 +18,7 @@
   --color-hero: #ffffff;
   --color-white: #ffffff;
   --color-activ-btn: #188ce8;
+  --color-contact-tooter: rgba(255, 255, 255, 0.6);
 }
 
 /* спадкодавець */
@@ -177,7 +178,7 @@ body {
   font-weight: inherit;
   font-size: var(--font-size-less);
   line-height: 1.714;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-contact-tooter);
 }
 .contact-address:hover,
 .contact-address:focus {
