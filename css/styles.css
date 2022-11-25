@@ -1,4 +1,11 @@
 :root {
+  /* шрифти */
+  --font-family-primary: "Roboto", sans-serif;
+  --font-weight-more: 700;
+  --font-weight-less: 500;
+  --font-size-more: 16px;
+  --font-size-less: 14px;
+  /* колор */
   --color-primary: #757575;
   --color-secondary: #212121;
   --color-brand: #2f303a;
@@ -10,13 +17,14 @@
   --color-logo-footer: #ffffff;
   --color-hero: #ffffff;
   --color-white: #ffffff;
+  --color-activ-btn: #188ce8;
 }
 
 /* спадкодавець */
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
 }
 /* скидання властивості стилей */
 .list {
@@ -27,14 +35,16 @@ body {
   text-decoration: none;
 }
 
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  font-size: var(--font-size);
+}
+
 /* heder */
 .top-line {
   background-color: var(--top-line-bg);
 }
-/* font-family: 'Raleway',
-sans-serif;
-font-family: 'Roboto',
-sans-serif; */
 
 /*logo*/
 .logo {
@@ -43,18 +53,18 @@ sans-serif; */
 
 .logo-link {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: var(--font-weight-more);
   font-size: 26px;
   line-height: 1.2;
-  color: var(--color-logo);
   text-decoration: none;
+  color: var(--color-logo);
 }
 
 /* Site nav*/
 .site-nav .connect {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  font-weight: var(--font-weight-less);
+  font-size: var(--font-size-less);
+  line-height: 1.143;
   color: var(--color-secondary);
 }
 
@@ -63,14 +73,14 @@ sans-serif; */
   color: var(--color-accent);
 }
 .site-nav .connect.current {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 /*contact*/
 .contact .connect {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  font-weight: var(--font-weight-less);
+  font-size: var(--font-size-less);
+  line-height: 1.143;
   color: var(--color-primary);
 }
 
@@ -86,24 +96,25 @@ sans-serif; */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.364;
   text-transform: uppercase;
   color: var(--color-hero);
 }
 .button-hero {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--font-weight-more);
   line-height: 1.9;
   color: var(--color-white);
   background-color: var(--color-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--color-activ-btn);
 }
 
 .section-title {
-  font-weight: 700;
+  font-weight: var(--font-weight-more);
   font-size: 36px;
   line-height: 1.2;
   color: var(--color-secondary);
@@ -121,21 +132,21 @@ sans-serif; */
 }
 
 .section-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
+  font-weight: var(--font-weight-more);
+  font-size: var(--font-size-less);
+  line-height: 1.143;
   color: var(--color-secondary);
 }
 
 .post-text {
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: var(--font-size-less);
+  line-height: 1.714;
 }
 .section-team {
   background-color: var(--color-background-light);
 }
 .desc-text {
-  font-size: 16px;
+  font-size: var(--font-size-more);
   line-height: 1.2;
 }
 
@@ -151,9 +162,9 @@ sans-serif; */
 
 .reach {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: inherit;
+  font-size: var(--font-size-less);
+  line-height: 1.714;
   color: var(--color-white);
 }
 .reach:hover,
@@ -163,9 +174,9 @@ sans-serif; */
 
 .contact-address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: inherit;
+  font-size: var(--font-size-less);
+  line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-address:hover,
@@ -175,31 +186,29 @@ sans-serif; */
 
 /* porfolio */
 .button-filter {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.3;
+  font-weight: var(--font-weight-less);
+  line-height: 1.625;
   color: var(--color-secondary);
   background: var(--color-background-light);
-  cursor: pointer;
 }
 
-.button-filter:hover {
+.button-filter:hover,
+.button-filter:focus {
   background-color: var(--color-accent);
   color: var(--color-white);
 }
 .button-filter:active {
-  background-color: var(--color-accent);
-  color: var(--color-white);
+  background-color: var(--color-activ-btn);
 }
+
 .box-subtitle {
-  font-weight: 700;
+  font-weight: var(--font-weight-more);
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   color: var(--color-secondary);
 }
 .dest {
-  font-size: 16px;
+  font-size: var(--font-size-more);
   line-height: 1.9;
   color: var(--color-primary);
 }
