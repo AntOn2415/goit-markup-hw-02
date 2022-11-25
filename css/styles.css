@@ -39,7 +39,7 @@ body {
 .button {
   font-family: inherit;
   cursor: pointer;
-  font-size: var(--font-size);
+  font-size: var(--font-size--more);
 }
 
 /* heder */
